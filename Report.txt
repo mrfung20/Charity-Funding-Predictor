@@ -1,0 +1,37 @@
+Deep Learning Report
+
+Overview
+
+The deep learning model that I constructed was developed to determine if loans given to the
+different charity organizations were used effectively or not.   
+
+Results
+
+The target for this model will be the IS_SUCCESSFUL data.
+For Features I will have the following columns worth of data:
+	APPLICATION_TYPE
+	AFFILIATION
+	CLASSIFICATION
+	USE_CASE 
+	ORGANIZATION
+	STATUS
+	INCOME_AMT
+	SPECIAL_CONSIDERATIONS
+	ASK_AMOUNT
+NAME and EIN were removed from the dataset as they were not the targets or features.  If I were to redo the assignment,
+I would remove the status of the loan as well from the features.  
+
+In my base model I used 8 nuerons and 5 nuerons.  My base model ended up with 43 features, so having 13 features genearally
+aligned with the basic 20-25% rule.
+I attempted to increase the width and length of the neural network by adding neurons and adding an additional layer.  Finally,
+I attempted bucketing a 3rd categorical variable, INCOME_AMT, to see if it could improve the model's accuracy.  In the end, 
+I was able to improve my initial model's accuracy metric by about 1% to ~ 73.8%, but I could not reach 75%.  
+
+Summary
+
+As I have previously stated, my optimization efforts did improve my model's performance, but I was unable to get to 75%.  There 
+are several other approaches that could have been taken to address this problem, but a classic approach to classification 
+problems is to try fitting a logistic regression model to the data to predict the outcome.  That would be the first approach I
+I might try.   
+
+
